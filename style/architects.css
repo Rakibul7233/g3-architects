@@ -20,6 +20,9 @@
 .dark3{
     color:rgba(114, 114, 114, 1);
 }
+.primary-color{
+    color: #FF900E;
+}
 .btn-primary{
     background-color: #FF900E;
     color: white;
@@ -29,7 +32,13 @@
     padding: 20px 25px;
     font-weight: 600;
     cursor: pointer;
-
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
 }
 
 /* navbar style  */
@@ -72,9 +81,36 @@
     margin: 20px 0;
 }
 
+/* Team and feature  */
+.team{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-feature{
+    margin-left: 70px;
+    max-width: 535px;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#quick-list{
+    font-weight: 500;
+}
 
 @media screen and (max-width:576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .team{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-feature{
+        margin: 0 auto;
     }
 }
