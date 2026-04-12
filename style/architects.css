@@ -60,13 +60,21 @@ main>section{
 .nav-items{
     list-style: none;
     margin-right: 2rem;
+   
     
 }
 .nav-link{
     text-decoration: none;
     font-weight: 500;
+    
+    border-radius: 6px;
+    transition: 0.3s;
 }
-
+.nav-link:hover{
+    padding: 10px;
+    color: white;
+    background-color: #FF900E;
+}
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
@@ -195,6 +203,9 @@ main>section{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 24px;
+    }
+    .nav-items{
+        padding: 5px;
     }
     main section{
         margin: 20px;
